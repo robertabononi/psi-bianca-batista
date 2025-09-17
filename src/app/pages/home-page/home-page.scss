@@ -1,0 +1,100 @@
+html body {
+    background-color: #b46e7c;
+    display: flex;
+    min-height: 100dvh;
+    width: 100vw;
+}
+
+#home {
+    background-color: #b46e7c;
+    min-height: 100dvh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .home-images {
+        position: relative;
+        height: 92.5vw; /* 296px */
+    }
+
+    .profile-image {
+        display: flex;
+        width: 80vw;
+        height: 80vw;
+        border-radius: 21.875vw 0 21.875vw 0; /* 70px 0 70px 0 */
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        object-position: 0 -6.25vw; /* 0 -20px */
+    }
+
+    .logo-image {
+        position: absolute;
+        width: 28.125vw; /* 90px */
+        border-radius: 100vw;
+        bottom: 0;
+        left: 50%;
+        translate: -50%;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            font-size: 3.75vw; /* 12px */
+            color: #000000ad;
+        }
+    }
+
+    ol {
+        display: flex;
+        gap: 3.75vw; /* 12px */
+        height: 6.25vw; /* 20px */
+        margin-top: 5vw; /* 16px */
+
+        li {
+            width: 7.78125vw; /* 25px */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 6.25vw; /* 20px */
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #whatsapp {
+            background-image: url("/assets/icon-whatsapp.png");
+        }
+
+        #instagram {
+            background-image: url("/assets/icon-instagram.png");
+        }
+
+        #email {
+            background-image: url("/assets/icon-email.png");
+        }
+
+        #location {
+            background-image: url("/assets/icon-placeholder.png");
+        }
+    }
+
+    #home-button {
+        margin-top: 10vw; /* 32px */
+        padding: 3.75vw; /* 12px */
+        font-size: 4.375vw; /* 14px */
+        border-radius: 100vw;
+        border: none;
+        background-color: #e7c878;
+        color: #000;
+    }
+}
