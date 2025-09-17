@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './home-page.scss'
 })
 export class HomePage {
+  private router = inject(Router);
 
+  public accessMenu() {
+    this.router.navigate(['/menu']);
+  }
 }
