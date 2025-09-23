@@ -6,9 +6,17 @@
     position: fixed;
     bottom: 0;
 
-    background-color: #0101;
+    background-color: #fafbfd;
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 10px;
+
+        img {
+            width: 30px;
+        }
     }
 }
