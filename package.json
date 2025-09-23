@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy":"ng build --configuration production --base-href /psi-bianca-batista/ && npx angular-cli-ghpages --dir=dist/psi-bianca-batista/browser"
   },
   "prettier": {
     "printWidth": 100,
