@@ -1,18 +1,11 @@
 <ol class="menu">
-    <li class="menu__item">
-        <img src="assets/icon-about-me.png" alt="">
-        Eu
-    </li>
-    <li class="menu__item">
-        <img src="assets/icon-cubes.png" alt="">
-        Crianças
-    </li>
-    <li class="menu__item">
-        <img src="assets/icon-adults.png" alt="">
-        Adultos
-    </li>
-    <li class="menu__item">
-        <img src="assets/icon-faq.png" alt="">
-        FAQ
-    </li>
+    @for (item of menuService.menuItem$ | async; track item) {
+        <li class="menu__item"
+            (click)="onMenuItemClick(item.id)"
+            [class.menu__item--active]="item.active"
+        >
+            <img [src]="item.icon" alt="">
+            <p>{{ item.label }}</p>
+        </li>
+    }
 </ol>
