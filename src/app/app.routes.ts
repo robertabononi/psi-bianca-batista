@@ -3,12 +3,8 @@ import { HomePage } from './pages/home-page/home-page';
 import { MenuPage } from './pages/menu-page/menu-page';
 
 export const routes: Routes = [
-    {
-        path: '',
-        component: HomePage,
-    },
-    {
-        path: 'menu',
-        component: MenuPage,
-    },
+    { path: '', component: HomePage },
+    { path: 'menu', component: MenuPage },
+    { path: '', redirectTo: '', pathMatch: 'full' },
+    { path: '**', redirectTo: '' }
 ];
