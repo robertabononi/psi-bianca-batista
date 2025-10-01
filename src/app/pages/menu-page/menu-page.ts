@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 
+import { HomeButton } from '../../components/home-button/home-button';
 import { Menu } from '../../components/menu/menu';
 import { MenuService } from '../../services/menu.service';
 import { MenuItem, MenuItemModel } from '../../shared/models/menu.model';
@@ -9,9 +10,10 @@ import { FaqPage } from '../faq-page/faq-page';
 @Component({
   selector: 'app-menu-page',
   imports: [
-    Menu,
+    HomeButton,
     AboutMePage,
-    FaqPage
+    FaqPage,
+    Menu
   ],
   templateUrl: './menu-page.html',
   styleUrl: './menu-page.scss'

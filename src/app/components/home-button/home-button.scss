@@ -1,0 +1,16 @@
+.home-button {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 15.625vw; /* 50px */
+    padding: 6.25vw; /* 20px */
+    border: 0;
+
+    img {
+        width: 5vw; /* 16px */
+        max-width: 5vw; /* 16px */
+        height: 5vw; /* 16px */
+    }
+}
