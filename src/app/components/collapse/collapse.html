@@ -1,0 +1,12 @@
+<div class="collapse"
+    [class.collapse--active]="isOpen"
+>
+    <div class="collapse__header" (click)="toggle()">
+        <p>{{ question }}</p>
+        <img src="assets/icon-arrow-down.png" alt="">
+    </div>
+
+    <div class="collapse__body">
+        <p [innerHTML]="answer"></p>
+    </div>
+</div>

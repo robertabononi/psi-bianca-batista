@@ -1,0 +1,10 @@
+<section class="faq">
+    <h1>Perguntas frequentes</h1>
+
+    @for (item of questionsAndAnswers; track item) {
+        <app-collapse
+            [question]="item.question"
+            [answer]="item.answer"
+        ></app-collapse>
+    }
+</section>

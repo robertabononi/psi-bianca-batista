@@ -1,0 +1,37 @@
+.collapse {
+    margin: 0 0 5vw; /* 0 0 16px */
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: grey;
+        padding: 3.125vw; /* 10px */
+
+        img {
+            width: 5vw; /* 16px */
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+
+    &__body {
+        display: none;
+        padding: 3.125vw; /* 10px */
+    }
+
+    &--active {
+        background-color: lightgrey;
+
+        .collapse {
+            &__header {
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &__body {
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,7 +1,18 @@
 <div class="menu-page">
     <div class="menu-page__content">
-        @if (activeMenuPage === MenuItem.EU) {
-            <app-about-me-page></app-about-me-page>
+        @switch (activeMenuPage) {
+            @case (MenuItem.EU) {
+                <app-about-me-page></app-about-me-page>
+            }
+            <!-- @case (MenuItem.CRIANCAS) {
+                <app-children-page></app-children-page>
+            } -->
+            <!-- @case (MenuItem.ADULTOS) {
+                <app-adults-page></app-adults-page>
+            } -->
+            @case (MenuItem.FAQ) {
+                <app-faq-page></app-faq-page>
+            }
         }
     </div>
 

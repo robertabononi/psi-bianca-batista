@@ -4,12 +4,14 @@ import { Menu } from '../../components/menu/menu';
 import { MenuService } from '../../services/menu.service';
 import { MenuItem, MenuItemModel } from '../../shared/models/menu.model';
 import { AboutMePage } from '../about-me-page/about-me-page';
+import { FaqPage } from '../faq-page/faq-page';
 
 @Component({
   selector: 'app-menu-page',
   imports: [
     Menu,
-    AboutMePage
+    AboutMePage,
+    FaqPage
   ],
   templateUrl: './menu-page.html',
   styleUrl: './menu-page.scss'
