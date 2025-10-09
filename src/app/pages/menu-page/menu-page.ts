@@ -6,12 +6,14 @@ import { MenuService } from '../../services/menu.service';
 import { MenuItem, MenuItemModel } from '../../shared/models/menu.model';
 import { AboutMePage } from '../about-me-page/about-me-page';
 import { FaqPage } from '../faq-page/faq-page';
+import { ChildrenPage } from '../children-page/children-page';
 
 @Component({
   selector: 'app-menu-page',
   imports: [
     HomeButton,
     AboutMePage,
+    ChildrenPage,
     FaqPage,
     Menu
   ],
