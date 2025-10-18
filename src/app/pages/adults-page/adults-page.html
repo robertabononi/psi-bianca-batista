@@ -1,0 +1,19 @@
+<section class="adults">
+    <h1>Atendimento adulto</h1>
+
+    <p>Foco no apoio emocional emocional para adultos e adolescentes, focado em desafios emocionais e comportamentais, criando um lugar seguro para o autoconhecimento.</p>
+
+    <p>Abaixo estão alguns dos temas que a psicoterapia pode ser um suporte significativo:</p>
+
+    <ol>
+        @for (theme of therapyThemes; track theme) {
+            <li>
+                <app-card
+                    [imageSrc]="theme.imageSrc"
+                    [title]="theme.title"
+                    [description]="theme.description"
+                ></app-card>
+            </li>
+        }
+    </ol>
+</section>

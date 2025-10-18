@@ -1,0 +1,14 @@
+.card {
+    box-shadow: 0px 30px 60px rgba(92, 99, 105, 0.15);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    
+    img {
+        border-radius: 24px 24px 0 0;
+    }
+
+    &__info {
+        padding: 8px;
+    }
+}

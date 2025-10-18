@@ -1,0 +1,13 @@
+<div class="card">
+    @if (imageSrc) {
+        <img [src]="imageSrc" alt="">
+    }
+
+    <div class="card__info">
+        <h2>{{ title }}</h2>
+
+        @for (item of description; track item) {
+            <p>{{ item }}</p>
+        }
+    </div>
+</div>

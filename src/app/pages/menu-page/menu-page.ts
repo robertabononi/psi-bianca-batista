@@ -7,6 +7,7 @@ import { MenuItem, MenuItemModel } from '../../shared/models/menu.model';
 import { AboutMePage } from '../about-me-page/about-me-page';
 import { FaqPage } from '../faq-page/faq-page';
 import { ChildrenPage } from '../children-page/children-page';
+import { AdultsPage } from '../adults-page/adults-page';
 
 @Component({
   selector: 'app-menu-page',
@@ -14,6 +15,7 @@ import { ChildrenPage } from '../children-page/children-page';
     MenuHeader,
     AboutMePage,
     ChildrenPage,
+    AdultsPage,
     FaqPage,
     Menu
   ],
