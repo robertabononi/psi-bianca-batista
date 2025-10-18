@@ -2,12 +2,12 @@ import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home-button',
+  selector: 'app-menu-header',
   imports: [],
-  templateUrl: './home-button.html',
-  styleUrl: './home-button.scss'
+  templateUrl: './menu-header.html',
+  styleUrl: './menu-header.scss'
 })
-export class HomeButton {
+export class MenuHeader {
   private router = inject(Router);
 
   public navigateToHome(): void {

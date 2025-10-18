@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 
-import { HomeButton } from '../../components/home-button/home-button';
+import { MenuHeader } from '../../components/menu-header/menu-header';
 import { Menu } from '../../components/menu/menu';
 import { MenuService } from '../../services/menu.service';
 import { MenuItem, MenuItemModel } from '../../shared/models/menu.model';
@@ -11,7 +11,7 @@ import { ChildrenPage } from '../children-page/children-page';
 @Component({
   selector: 'app-menu-page',
   imports: [
-    HomeButton,
+    MenuHeader,
     AboutMePage,
     ChildrenPage,
     FaqPage,

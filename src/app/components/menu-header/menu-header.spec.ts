@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeButton } from './home-button';
+import { HomeButton } from './menu-header';
 
 describe('HomeButton', () => {
   let component: HomeButton;
