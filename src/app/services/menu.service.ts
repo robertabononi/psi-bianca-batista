@@ -16,13 +16,13 @@ export class MenuService {
     },
     {
       id: MenuItem.CRIANCAS,
-      label: 'Crianças',
+      label: 'At. Infantil',
       icon: 'assets/icon-cubes.png',
       active: false
     },
     {
       id: MenuItem.ADULTOS,
-      label: 'Adultos',
+      label: 'At. Adulto',
       icon: 'assets/icon-adults.png',
       active: false
     },
