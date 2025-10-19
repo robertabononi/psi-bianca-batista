@@ -5,15 +5,17 @@
 
     <p>Abaixo estão alguns dos temas que a psicoterapia pode ser um suporte significativo:</p>
 
-    <ol>
-        @for (theme of therapyThemes; track theme) {
-            <li>
-                <app-card
-                    [imageSrc]="theme.imageSrc"
-                    [title]="theme.title"
-                    [description]="theme.description"
-                ></app-card>
-            </li>
-        }
-    </ol>
+    <div class="adults__themes">
+        <ol class="adults__themes__list">
+            @for (theme of therapyThemes; track theme) {
+                <li class="adults__themes__list__item">
+                    <app-card
+                        [imageSrc]="theme.imageSrc"
+                        [title]="theme.title"
+                        [description]="theme.description"
+                    ></app-card>
+                </li>
+            }
+        </ol>
+    </div>
 </section>

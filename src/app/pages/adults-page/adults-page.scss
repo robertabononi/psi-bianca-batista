@@ -9,4 +9,40 @@
     p {
         margin: 0 0 5vw; /* 0 0 16px */
     }
+
+    &__themes {
+    width: 100%;
+    position: relative;
+
+        &__list {
+            display: grid;
+            grid-template-columns: 90vw 80vw 90vw; /* 288px 256px 288px */
+            position: absolute;
+            overflow: scroll;
+            scroll-behavior: smooth;
+            width: 100vw;
+            left: -10vw; /* -32px */
+            gap: 5vw; /* 16px */
+            scroll-snap-type: x mandatory;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar { 
+                display: none;
+            }
+
+            &__item {
+                width: calc(100vw - 20vw); /* calc(100vw - 64px) */
+                scroll-snap-align: center;
+
+                &:first-child {
+                    margin-left: 10vw; /* 32px */
+                }
+
+                &:last-child {
+                    margin-right: 10vw; /* 32px */
+                }
+            }
+        }
+    }
 }

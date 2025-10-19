@@ -17,7 +17,14 @@ export class AdultsPage {
       ]
     },
     {
-      imageSrc: 'assets/image-career-transition.jpg',
+      imageSrc: 'assets/image-friendship.jpg',
+      title: 'Problemas de relacionamentos',
+      description: [
+        'Conflitos em relacionamento pessoal, amoroso e familiar, gerenciamento de ansiedade, autoestima para uma vida mais equilibrada.'
+      ]
+    },
+    {
+      imageSrc: 'assets/image-eating-disorder.jpg',
       title: 'Transtornos alimentares',
       description: [
         'Apoio especializado para lidar com questões alimentares e promover uma relação saudável com a comida.'
