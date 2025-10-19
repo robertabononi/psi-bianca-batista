@@ -17,6 +17,7 @@
         &__list {
             display: grid;
             grid-template-columns: 90vw 80vw 90vw; /* 288px 256px 288px */
+            padding-bottom: 10vw; /* 32px */
             position: absolute;
             overflow: scroll;
             scroll-behavior: smooth;
