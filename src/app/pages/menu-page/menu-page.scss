@@ -6,3 +6,17 @@
         overflow: auto;
     }
 }
+
+@media screen and (min-width: 769px) {
+    .menu-page {
+        app-menu-header {
+            display: none;
+        }
+
+        &__content {
+            height: 100%;
+            margin-top: 70px;
+            // padding: 0 80px;
+        }
+    }
+}

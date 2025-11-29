@@ -33,3 +33,19 @@
         }
     }
 }
+
+@media screen and (min-width: 769px) {
+    .menu {
+        top: 0;
+        bottom: auto;
+        display: flex;
+        justify-content: flex-end;
+        height: 70px;
+
+        &__item {
+            img {
+                display: none;
+            }
+        }
+    }
+}
