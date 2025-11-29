@@ -6,95 +6,180 @@ html body {
 }
 
 #home {
+    display: grid;
+    align-items: center;
     background-color: #b46e7c;
     min-height: 100dvh;
     width: 100vw;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    .home-images {
-        position: relative;
-        height: 92.5vw; /* 296px */
-    }
-
-    .profile-image {
-        display: flex;
-        width: 80vw;
-        height: 80vw;
-        border-radius: 21.875vw 0 21.875vw 0; /* 70px 0 70px 0 */
-        align-items: center;
-        justify-content: center;
-        object-fit: cover;
-        object-position: 0 -6.25vw; /* 0 -20px */
-    }
-
-    .logo-image {
-        position: absolute;
-        width: 28.125vw; /* 90px */
-        border-radius: 100vw;
-        bottom: 0;
-        left: 50%;
-        translate: -50%;
-    }
-
-    .profile-info {
+    .home {
+        padding: 40px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 100%;
 
-        span {
-            font-size: 3.75vw; /* 12px */
-            color: #000000ad;
+        .home-images {
+            position: relative;
+            height: 92.5vw; /* 296px */
         }
-    }
 
-    ol {
-        display: flex;
-        gap: 3.75vw; /* 12px */
-        height: 6.25vw; /* 20px */
-        margin-top: 5vw; /* 16px */
+        &__content {
+            display: grid;
+        }
 
-        li {
-            width: 7.78125vw; /* 25px */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 6.25vw; /* 20px */
+        .profile-image {
+            display: flex;
+            width: 80vw;
+            height: 80vw;
+            border-radius: 21.875vw 0 21.875vw 0; /* 70px 0 70px 0 */
+            align-items: center;
+            justify-content: center;
+            object-fit: cover;
+            object-position: 0 -6.25vw; /* 0 -20px */
+        }
 
-            a {
-                display: block;
-                width: 100%;
-                height: 100%;
+        .logo-image {
+            position: absolute;
+            width: 28.125vw; /* 90px */
+            border-radius: 100vw;
+            bottom: 0;
+            left: 50%;
+            translate: -50%;
+        }
+
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                font-size: 3.75vw; /* 12px */
+                color: #000000ad;
             }
         }
 
-        #whatsapp {
-            background-image: url("../../../assets/icon-whatsapp.png");
+        ol {
+            display: flex;
+            justify-content: center;
+            gap: 3.75vw; /* 12px */
+            height: 6.25vw; /* 20px */
+            margin-top: 5vw; /* 16px */
+
+            li {
+                width: 7.78125vw; /* 25px */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 6.25vw; /* 20px */
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            #whatsapp {
+                background-image: url("../../../assets/icon-whatsapp.png");
+            }
+
+            #instagram {
+                background-image: url("../../../assets/icon-instagram.png");
+            }
+
+            #email {
+                background-image: url("../../../assets/icon-email.png");
+            }
+
+            #location {
+                background-image: url("../../../assets/icon-placeholder.png");
+            }
         }
 
-        #instagram {
-            background-image: url("../../../assets/icon-instagram.png");
-        }
-
-        #email {
-            background-image: url("../../../assets/icon-email.png");
-        }
-
-        #location {
-            background-image: url("../../../assets/icon-placeholder.png");
+        #home-button {
+            margin-top: 10vw; /* 32px */
+            padding: 3.75vw; /* 12px */
+            font-size: 4.375vw; /* 14px */
+            border-radius: 100vw;
+            border: none;
+            background-color: #e7c878;
+            color: #000;
         }
     }
+}
 
-    #home-button {
-        margin-top: 10vw; /* 32px */
-        padding: 3.75vw; /* 12px */
-        font-size: 4.375vw; /* 14px */
-        border-radius: 100vw;
-        border: none;
-        background-color: #e7c878;
-        color: #000;
+
+@media screen and (min-width: 769px) {
+    #home {
+        min-height: 100vh;
+
+        .home {
+            flex-direction: row;
+            gap: 40px;
+            padding: 0 80px;
+            min-height: auto;
+
+            .home-images {
+                grid-column: 1;
+                grid-row: 1 / 4;
+
+                display: flex;
+                align-items: center;
+                object-fit: contain;
+                height: auto;
+
+                .profile-image {
+                    width: 50vh;
+                    height: 60vh;
+                    border-radius: 100% 100% 0 0;
+                    object-position: top;
+                }
+
+                .logo-image {
+                    width: 10vw;
+                    bottom: -5vw;
+                }
+            }
+
+            .profile-info {
+                grid-column: 2;
+                grid-row: 1;
+
+                h1 {
+                    font-size: 60px;
+                }
+
+                p {
+                    font-size: 40px;
+                }
+
+                span {
+                    font-size: 24px;
+                }
+            }
+
+            .social-media-list {
+                grid-column: 2;
+                grid-row: 2;
+                justify-content: space-evenly;
+                gap: 0;
+                margin: 0;
+
+                li {
+                    width: 32px;
+                    background-size: 32px;
+                }
+            }
+
+            #home-button {
+                grid-column: 2;
+                grid-row: 3;
+
+                margin: 0;
+                font-size: 24px;
+                padding: 16px;
+            }
+        }
     }
 }
