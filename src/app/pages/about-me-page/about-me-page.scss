@@ -24,3 +24,23 @@
         margin-bottom: 5vw; /* 16px */
     }
 }
+
+@media screen and (min-width: 769px) {
+    .about-me {
+        background-color: #fff;
+        padding: 0;
+        flex-direction: row;
+
+        &__content {
+            font-size: 48px;
+        }
+        
+        &__title {
+            margin: 0 0 16px;
+        }
+
+        &__paragraph {
+            margin-bottom: 16px !important;
+        }
+    }
+}
