@@ -30,17 +30,18 @@
         background-color: #fff;
         padding: 0;
         flex-direction: row;
+        gap: 80px;
 
         &__content {
             font-size: 48px;
         }
         
         &__title {
-            margin: 0 0 16px;
+            margin: 0 0 40px;
         }
 
         &__paragraph {
-            margin-bottom: 16px !important;
+            margin-bottom: 24px !important;
         }
     }
 }
