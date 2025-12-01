@@ -46,3 +46,40 @@
     75%  { transform: translateX(-75%); }
     100% { transform: translateX(0%); }
 }
+
+@media screen and (min-width: 769px) {
+    .children {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        padding: 0;
+
+        h1 {
+            margin: 0 0 40px;
+            font-size: 96px;
+        }
+
+        p {
+            margin-bottom: 24px !important;
+            font-size: 48px;
+        }
+
+        .slider {
+            height: min-content;
+            background-color: #fff;
+
+            .slides {
+                height: min-content;
+                align-items: center;
+
+                .slide {
+                    height: min-content;
+
+                    img {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
