@@ -32,3 +32,33 @@
         }
     }
 }
+
+@media screen and (min-width: 769px) {
+    .menu-header {
+        &__container {
+            justify-content: space-between;
+            height: 50px;
+        }
+
+        &__back-button {
+            cursor: pointer;
+            padding: 0;
+
+            &__image {
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        &__logo {
+            margin: 0;
+
+            &__image {
+                width: 50px;
+                height: 50px;
+                margin: 0;
+            }
+        }
+    }
+
+}

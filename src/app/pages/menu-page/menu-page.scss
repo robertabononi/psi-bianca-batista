@@ -9,9 +9,8 @@
 
 @media screen and (min-width: 769px) {
     .menu-page {
-        app-menu-header {
-            display: none;
-        }
+            display: grid;
+            grid-template-columns: calc(50% + 25px) calc(50% - 25px);
 
         &__content {
             height: 100%;
