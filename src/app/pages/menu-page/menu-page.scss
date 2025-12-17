@@ -13,7 +13,7 @@
             grid-template-columns: calc(50% + 25px) calc(50% - 25px);
 
         &__content {
-            height: 100%;
+            height: calc(100vh - 50px);
             margin-top: 70px;
             padding: 0 80px;
         }
