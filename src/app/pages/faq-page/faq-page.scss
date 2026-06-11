@@ -6,3 +6,9 @@
         margin: 0 0 7.5vw; /* 0 0 24px */
     }
 }
+
+@media screen and (min-width: 769px) {
+    .faq {
+        padding: 0;
+    }
+}
